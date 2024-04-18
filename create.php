@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "../db/config.php";
+require_once "config.php";
  
 // Define variables and initialize with empty values
 $product_name = $product_details = $product_retail_price = "";
