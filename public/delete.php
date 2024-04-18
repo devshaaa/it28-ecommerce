@@ -1,15 +1,15 @@
 <?php
 // Process delete operation after confirmation
-if(isset($_POST["id"]) && !empty($_POST["id"])){
+if(isset($_POST["product_id"]) && !empty($_POST["product_id"])){
     // Include config file
     require_once "../db/config.php";
     
     // Prepare a delete statement
-    $sql = "DELETE FROM products WHERE id = :id";
+    $sql = "DELETE FROM products WHERE product_id = :product_id";
     
     if($stmt = $pdo->prepare($sql)){
         // Bind variables to the prepared statement as parameters
-        $stmt->bindParam(":id", $param_id);
+        $stmt->bindParam(":product_id", $param_id);
         
         // Set parameters
         $param_id = trim($_POST["id"]);
@@ -31,7 +31,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     unset($pdo);
 } else{
     // Check existence of id parameter
-    if(empty(trim($_GET["id"]))){
+    if(empty(trim($_GET["product_id"]))){
         // URL doesn't contain id parameter. Redirect to error page
         header("location: error.php");
         exit();
@@ -60,7 +60,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                     <h2 class="mt-5 mb-3">Delete Record</h2>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="alert alert-danger">
-                            <input type="hidden" name="id" value="<?php echo trim($_GET["id"]); ?>"/>
+                            <input type="hidden" name="product_id" value="<?php echo trim($_GET["product_id"]); ?>"/>
                             <p>Are you sure you want to delete this employee record?</p>
                             <p>
                                 <input type="submit" value="Yes" class="btn btn-danger">

@@ -2,7 +2,7 @@
 // Check existence of id parameter before processing further
 if(isset($_GET["product_id"]) && !empty(trim($_GET["product_id"]))){
     // Include config file
-    require_once "config.php";
+    require_once "../db/config.php";
     
     // Prepare a select statement
     $sql = "SELECT * FROM products WHERE product_id = :product_id";
