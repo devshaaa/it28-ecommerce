@@ -12,12 +12,12 @@ if(isset($_POST["product_id"]) && !empty($_POST["product_id"])){
         $stmt->bindParam(":product_id", $param_id);
         
         // Set parameters
-        $param_id = trim($_POST["id"]);
+        $param_id = trim($_POST["product_id"]);
         
         // Attempt to execute the prepared statement
         if($stmt->execute()){
             // Records deleted successfully. Redirect to landing page
-            header("location: index.php");
+            header("location: ../index.php");
             exit();
         } else{
             echo "Oops! Something went wrong. Please try again later.";
