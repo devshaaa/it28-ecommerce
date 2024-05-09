@@ -3,7 +3,7 @@
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
 define('DB_NAME', 'u593341949_db_heras');
-define('DB_USERNAME', 'u593341959_dev_heras');
+define('DB_USERNAME', 'u593341949_dev_heras');
 define('DB_PASSWORD', '20211008Heras');
 
 
