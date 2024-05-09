@@ -2,9 +2,9 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 define('DB_SERVER', 'localhost');
-define('DB_NAME', 'it28-ecommerce-heras');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
+define('DB_NAME', 'u593341949_db_heras');
+define('DB_USERNAME', 'u593341959_dev_heras');
+define('DB_PASSWORD', '20211008Heras');
 
 
 try{
