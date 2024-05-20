@@ -93,8 +93,59 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            width: 360px;
+            padding: 20px;
+            background-color: #fff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .wrapper h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; /* Dark gray text */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #333; /* Dark gray text for labels */
+        }
+
+        .form-control {
+            border-color: #ccc; /* Light gray border */
+        }
+
+        .form-control:focus {
+            border-color: #007bff; /* Blue border when focused */
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Focus effect */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Blue button */
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
