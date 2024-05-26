@@ -384,11 +384,11 @@ h1 {
             </nav>
             <hr>
             <div class="slideshow-container">
-        <img class="slides fade" src="../media/1.avif" alt="Image 1">
-        <img class="slides fade" src="../media/2.jpg" alt="Image 2">
-        <img class="slides fade" src="../media/3.jpg" alt="Image 3">
-        <img class="slides fade" src="../media/4.jpg" alt="Image 4">
-        <img class="slides fade" src="../media/5.png" alt="Image 5">
+        <img class="slides fade" src="../media/1.webp" alt="Image 1">
+        <img class="slides fade" src="../media/2.webp" alt="Image 2">
+        <img class="slides fade" src="../media/3.webp" alt="Image 3">
+        <img class="slides fade" src="../media/4.webp" alt="Image 4">
+        <img class="slides fade" src="../media/5.webp" alt="Image 5">
         <div class="navigation">
             <button onclick="prevSlide()">Prev</button>
             <button onclick="nextSlide()">Next</button>
