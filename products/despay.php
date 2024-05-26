@@ -26,7 +26,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to bottom, #994d00 675px, #663300 10px);
+    background-image: linear-gradient(to bottom, #ff66a3 615px, #ff0066 10px);
     color: #000000;
     padding: 20px;
 }
@@ -97,7 +97,7 @@
     border-radius: 5px;
     padding: 5px;
     width: 300px; /* Adjusted width to fit two cards per row */
-    background-color: white;
+    background-color: #ff99c2;
     box-shadow: 0 0 20px black;
     display: flex;
     flex-direction: column;
@@ -119,16 +119,16 @@
     box-shadow: 0 0 20px black;
 }
 .card-img-top {
-    border-top-left-radius: 0px;
+    border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
-    border: 10px solid black; /* Add border style */
+    border: 5px solid black; /* Add border style */
     text-align: center;
 }
 
 .card-body {
-    padding: 100px;
+    padding: 50px;
 }
 
 .card-title {
@@ -200,7 +200,7 @@
 }
 
 .logo img {
-    max-width: 100px; /* Set a maximum width */
+    max-width: 50px; /* Set a maximum width */
     height: auto; /* To maintain aspect ratio */
 }
 
@@ -231,7 +231,7 @@
 
 nav {
     flex: 6;
-    background-color: #663300;
+    background-color: black;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -258,10 +258,10 @@ h1 {
 }
 .slideshow-container {
     border: 3px solid black; 
-    border-radius: 10px;
+    
     max-width: 1300px;
-    width: 100%;
-    height: 200px;
+    width: 150%;
+    height: 250px;
     position: relative;
     margin: auto;
     overflow: hidden;
@@ -344,7 +344,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 5px;
-    background-color: white;
+    background-color: #cc0052;
     color: black;
     transition: background-color 0.3s, color 0.3s;
     margin-top: 3%;
@@ -363,11 +363,12 @@ h1 {
     margin-top: 30px;
 }
 
+
 </style>
 <body> 
     <nav>
         <div class="logo-container">
-            <img src="../media/logo.webp" alt="Logo" style="max-width: 150px; margin-top: -10px;">
+            <img src="../media/6.webp" alt="Logo" style="max-width: 150px; margin-top: -10px;">
         </div>
                 <ul class="nav-links">
                     <li><a href="../backups/logistic.php">logistics</a></li>
@@ -394,9 +395,7 @@ h1 {
             <button onclick="nextSlide()">Next</button>
         </div>
         </div>
-
-        <h1 class="my-5" style="font-size: 30px;">Welcome!, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> Discover quality products at great prices. Start shopping now!</h1>
-
+        <hr>
             <h1 class="text" style="color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 60px; text-align: center;">PRODUCTS</h1>
             <hr>
             <hr style="border-top: 3px solid black;">
