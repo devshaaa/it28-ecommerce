@@ -26,7 +26,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to bottom, #ff66a3 615px, #ff0066 10px);
+    background-image: linear-gradient(to bottom, #ff66a3 545px, #ff0066 100px);
     color: #000000;
     padding: 20px;
 }
@@ -232,12 +232,12 @@
 nav {
     flex: 6;
     background-color: black;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 2px 5px black(0, 0, 0, 0.1);
-     border: 6px solid black; 
+    border: 6px solid black; 
     border-radius: 10px;
 }
 .modal-footer {
@@ -366,22 +366,28 @@ h1 {
 
 </style>
 <body> 
-    <nav>
-        <div class="logo-container">
-            <img src="../media/6.webp" alt="Logo" style="max-width: 150px; margin-top: -10px;">
+<nav style="background-color: #FFC0CB; padding: 5px;">
+    <div class="container" style="display: flex; align-items: center;">
+        <div class="logo-container" style="margin-left: -80px; margin-top:-20px;">
+            <img src="../media/6.webp" alt="Logo" style="max-width: 80px;">
         </div>
-                <ul class="nav-links">
-                    <li><a href="../backups/logistic.php">logistics</a></li>
-                    <li><a href="../public/user/sale.php">Sale</a></li>
-                </ul>
-        <div style="text-align: center;">
-            <a href="../public/user/reset.php" class="btn btn-warning" style="border-color: black;">Reset Password</a>
-            <a href="../public/user/logout.php" class="btn btn-danger mr-3" style="border-color: black;">Log-out</a>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cartModal">
-            View Cart
-        </button>
+        <div style="display: flex; align-items: center;">
+            <ul class="nav-links" style="list-style: none; margin: 0; padding: 0; display: flex; align-items: center;">
+                <li style="margin-right: 5px;"><a href="../backups/logistic.php" style="margin-top:-50px;text-decoration: none; background-color: #000; color: #FFC0CB; padding: 3px 5px; font-size: 12px;">Logistics</a></li>
+                <li><a href="../public/user/sale.php" style="margin-top:-90px;text-decoration: none; background-color: #000; color: #FFC0CB; padding: 3px 5px; font-size: 12px;">Sale</a></li>
+            </ul>
+            <div class="button-container" style="margin-left: 5px;">
+                <a href="../public/user/reset.php" class="btn btn-primary" style="margin-right:-20px;margin-top:-20px;text-decoration: none; background-color: #000; color: #FFC0CB; padding: 3px 5px; font-size: 12px;">Reset</a>
+                <a href="../public/user/logout.php" class="btn btn-danger" style="margin-right:-20px; margin-top:-20px; text-decoration: none; background-color: #000; color: #FFC0CB; padding: 3px 5px; font-size: 12px;">Log-out</a>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#cartModal" style="margin-right:-70px;margin-top:-20px;background-color: #000; color: #FFC0CB; padding: 3px 5px; font-size: 12px;">View Cart</button>
+            </div>
         </div>
+    </div>
 </nav>
+
+
+
+
             </nav>
             <hr>
             <div class="slideshow-container">
