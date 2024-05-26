@@ -78,27 +78,38 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Reset Password</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light gray background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+           body {
+    font-family: Arial, sans-serif;
+    background-image: url('../../media/5.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        .wrapper {
-            width: 360px;
-            padding: 20px;
-            background-color: #fff; /* White background */
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-        }
+.wrapper {
+    width: 360px;
+    padding: 30px;
+    background-color: #fff; /* White background */
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(255, 69, 0, 0.7), 0 0 0 4px black; /* Orange shadow and black border */
+    background-image: url('../../media/2.webp'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
 
         .wrapper h2 {
             text-align: center;
             margin-bottom: 20px;
-            color: #333; /* Dark gray text */
+            color: white; /* Hard black text */
+            font-weight: bold; /* Bold font */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow */
+            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
         }
 
         .form-group {
@@ -106,31 +117,48 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
 
         label {
-            color: #333; /* Dark gray text for labels */
+            color: white; /* Hard black text */
+            font-weight: bold; /* Bold font */
+            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
         }
 
         .form-control {
-            border-color: #ccc; /* Light gray border */
+            border-color: orange; /* Light gray border */
+            font-weight: bold; /* Bold font */
         }
 
         .form-control:focus {
-            border-color: #007bff; /* Blue border when focused */
+            border-color: orange; /* Blue border when focused */
             box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Focus effect */
         }
 
         .btn-primary {
-            background-color: #007bff; /* Blue button */
-            border-color: #007bff;
+            background-color: orange; /* Blue button */
+            border-color: black;
+            font-weight: bold; /* Bold font */
         }
 
         .btn-primary:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: orange; /* Darker blue on hover */
             border-color: #0056b3;
         }
 
         .alert {
             margin-top: 20px;
         }
+        p {
+    font-weight: bold;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+
+        a {
+             font-weight: bold;
+             color: orange;
+             text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        } 
+        
 
     </style>
 </head>
@@ -151,7 +179,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link ml-2" href="./dashboard.php">Cancel</a>
+                <a class="btn btn-link ml-2" href="../../products/despay.php">Cancel</a>
             </div>
         </form>
     </div>    
