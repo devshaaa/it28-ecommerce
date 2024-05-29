@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Reports - Product Website </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        </head>
+        <body>
+
+            <div class="header">
+              <div class="container">
+                <div class="navbar">
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="index.html"> Home </a></li>
+                      <li><a href="payment.html"> Payment and Accounting </a></li>
+                      <li><a href="logistics.html"> Logistics</a></li>
+                      <li><a href="customer_service.html"> Customer Service</a></li>
+                      <li><a href="reports.html"> Reports</a></li>
+                    </ul>
+                  </nav>
+        
+                </div>
+                <div class="row">
+                  <div class="col-2">
+                    <h1>FOOD HUB:</h1>
+                    <p>Purchase our delicious tuna sandwich on our<br>
+                        website in a very affordable prices.</p>
+                    <a href="index.html" class="btn"> Explore Now &#8594; </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <style>
+        
+            /* Resetting default margin and padding for all elements */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            /* Header and Navigation styles */
+            header {
+                background-color: #333;
+                color: #f0e6e6;
+                padding: 10px;
+                text-align: center;
+            }
+        
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+        
+            nav ul li a {
+                color: #000000;
+                text-decoration: none;
+            }
+        
+            /* Form container */
+            .form-container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+        
+            /* Form title */
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        
+            /* Form input fields */
+            .form-group {
+                margin-bottom: 15px;
+            }
+        
+            label {
+                display: block;
+                font-weight: bold;
+            }
+        
+            input[type="text"],
+            select {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+        
+            /* Payment method container */
+            .payment-method-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        
+            .payment-method-container label {
+                font-weight: normal;
+            }
+        
+            /* Submit button */
+            input[type="submit"] {
+                background-color: goldenrod;
+                color: rgb(3, 0, 0);
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+        
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        </head>
+        <body>
+    <!-- Main Content Section -->
+    <main>
+        <!-- Sample Report -->
+        <div class="report">
+            <div class="report-header">
+                <span class="report-title">Monthly Sales Report</span>
+                <span class="report-type">Summary</span>
+            </div>
+            <ul class="report-items">
+                <li class="report-item"><i class="fas fa-chart-bar"></i> Total Sales: $5,000</li>
+                <li class="report-item"><i class="fas fa-shopping-cart"></i> Total Orders: 300</li>
+                <li class="report-item"><i class="fas fa-user"></i> Total Customers: 300</li>
+            </ul>
+        </div>
+
+        <!-- Sample Report -->
+        <div class="report">
+            <div class="report-header">
+                <span class="report-title">Product Performance Report</span>
+                <span class="report-type">Detailed</span>
+            </div>
+            <ul class="report-items">
+                <li class="report-item"><i class="fas fa-box"></i> Product 1: 100 units sold</li>
+                <li class="report-item"><i class="fas fa-box"></i> Product 2: 100 units sold</li>
+                <li class="report-item"><i class="fas fa-box"></i> Product 3: 100 units sold</li>
+            </ul>
+        </div>
+    </main>
+    <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .report {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        background-color: #fff;
+    }
+    
+    .report-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    .report-items {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .report-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .report-item i {
+        margin-right: 10px;
+    }
+</style>
+</body>
+</html>
