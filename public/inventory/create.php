@@ -107,6 +107,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <input type="text" name="product_retail_price" class="form-control <?php echo (!empty($product_retail_price_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $product_retail_price; ?>">
                             <span class="invalid-feedback"><?php echo $product_retail_price_err;?></span>
                         </div>
+
+                        <!-- Image -->
+
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <a href="../user/dashboard.php" class="btn btn-secondary ml-2">Cancel</a>
                     </form>
