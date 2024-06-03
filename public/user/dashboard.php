@@ -41,36 +41,7 @@ try {
 unset($pdo);
  
 ?>
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <style>
-        body{ font: 14px sans-serif; text-align: center; }
-        .wrapper{ 
-            margin: 80px auto;
-        }
-        table tr td:last-child{
-            width: 120px;
-        }
-
-        header {
-            background: #333;
-            padding: 20px 0;
-
-            color : #fff;
-        }
-
-    </style>
-</head>
-<body>
+    <?php include_once "inc/head.php"; ?>  
 
     <?php if($_SESSION['role'] == 1): ?>
 
@@ -124,18 +95,8 @@ unset($pdo);
     </div>
 
     <?php else: ?>
-        <header>
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <div class="">
-                        Site Logo
-                    </div>
-                    <div class="">
-                        <a class="text-white" href="./logout.php">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <?php include_once "inc/header.php"; ?>  
+
         <div class="wrapper">
 
             <div class="container">
@@ -158,9 +119,16 @@ unset($pdo);
                                 </div>
                                 <div class="card-body"><?= $product['product_details'] ?></div>
                                 <div class="card-footer d-flex justify-content-between">
-                                    <a class="btn btn-sm btn-success" href="">Buy Now</a>
-                                    <a class="btn btn-sm btn-primary" href="">Add to Cart</a>
+                                    <form method="post" action="buy_now.php">
+                                        <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
+                                        <button type="submit" class="btn btn-sm btn-success">Buy Now</button>
+                                    </form>
+                                    <form method="post" action="add_to_cart.php">
+                                        <input type="hidden" name="product_id" value="<?= $product['product_id'] ?>">
+                                        <button type="submit" class="btn btn-sm btn-primary">Add to Cart</button>
+                                    </form>
                                 </div>
+
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -172,5 +140,4 @@ unset($pdo);
 
     <?php endif; ?>
 
-</body>
-</html>
+<?php include_once "inc/footer.php"; ?>  

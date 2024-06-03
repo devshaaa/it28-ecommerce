@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Error</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .wrapper{
-            width: 600px;
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
+<?php include_once "inc/head.php"; ?>  
+<?php include_once "inc/header.php"; ?>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
@@ -22,5 +10,4 @@
             </div>        
         </div>
     </div>
-</body>
-</html>
+<?php include_once "inc/footer.php"; ?>  
